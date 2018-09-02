@@ -1,0 +1,25 @@
+{
+  "name": "vertik-web",
+  "version": "0.0.1",
+  "description": "Web vertik",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/vertikteam/vertik-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vertikteam/vertik-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "cssnano": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1"
+  }
+}
