@@ -1,0 +1,64 @@
+
+/* ------------------------
+    COLOR
+------------------------- */
+
+$color-yellow: #FECA00;
+$color-bg: #F7F6F1; 
+$color-black: #262626;
+$color-gray: #808080;
+
+
+/*------------------------------------
+    $BREAKPOINTS
+------------------------------------*/
+
+$bp-xl  : 85.00em; // 1360px //
+$bp-l-l : 78.125em; // 1280px //
+$bp-l   : 68.75em; // 1100px //
+$bp-m-l : 61.20em; //  980px //
+$bp-m   : 48.00em; //  768px //
+$bp-s-m : 41.20em; //  660px //
+$bp-s   : 30.00em; //  480px //
+
+$breakpoints: (
+  "bp-xl"  : 85.00em, // 1360px //
+  "bp-l-l" : 1200px, // 1200px //
+  "bp-l"   : 1160px, // 1160px //
+  "bp-m-l" : 61.20em, //  980px //
+  "bp-m"   : 48.00em, //  768px //
+  "bp-s-m" : 41.20em, //  660px //
+  "bp-s"   : 30.00em  //  480px //
+);
+
+@mixin breakpoint($breakpoint) {
+    // Get the width from the keyword `$breakpoint`
+    // Or `null` if the keyword doesn't exist in `$breakpoints` map
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If `$breakpoint` exists as a key in `$breakpoints`
+    @if $value != null {
+        // Update `$current-breakpoint`
+        $current-breakpoint: $breakpoint !global;
+
+    // Open a media query block
+    @media (min-width: $value) {
+        // Let the user dump content
+        @content;
+    }
+
+    // Then reset `$current-breakpoint` to `$default-breakpoint` (root)
+    $current-breakpoint: $default-breakpoint !global;
+    }
+
+    // If `$breakpoint` doesn't exist in `$breakpoints`,
+    // Warn the user and do nothing
+    @else {
+    @warn "Invalid breakpoint `#{$breakpoint}`.";
+    }
+}
+
+// Default variables
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+$placeholders: ();

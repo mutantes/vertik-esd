@@ -1,0 +1,8 @@
+#main-content {
+  padding: 70px 10px 60px;
+
+  @include breakpoint(bp-m) {
+    padding: 30px 105px 80px;
+  }
+}
+

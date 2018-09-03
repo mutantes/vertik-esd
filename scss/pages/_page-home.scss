@@ -1,0 +1,23 @@
+#home {
+  .hero-text {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 44px;
+    @include breakpoint(bp-l) {
+      line-height: 60px;
+      font-size: 46px;
+      max-width: 80%;
+    }
+  }
+  .two-col {
+    line-height: 22px;
+    p {
+      margin: 0 0 20px;
+    }
+    @include breakpoint(bp-l) {
+      max-width: 80%;
+      column-count: 2;
+      column-gap: 28px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+p, a, span, div, input, select, textarea {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}

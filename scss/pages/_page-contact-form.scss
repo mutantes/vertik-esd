@@ -1,0 +1,44 @@
+.contact-form {
+  .contact-form-text {
+    font-size: 14px;
+    line-height: 1.48em;
+  }
+}
+
+#contact {
+  @include breakpoint(bp-s) {
+    columns: 2;
+    column-gap: 40px;
+  }
+}
+
+
+.visible-web-design,
+.visible-app-design,
+.visible-development {
+  display: none;
+  margin-top: 40px;
+  
+  
+  &.form-visible {
+    display: block;
+    p {
+      font-size: 14px;
+      line-height: 1.48em;
+    }
+
+    @include breakpoint(bp-s){
+      display: flex;
+      align-items: flex-start;
+      p {
+        margin-top: 0;
+        width: 100%;
+        padding-right: 40px;
+      }
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}
+        

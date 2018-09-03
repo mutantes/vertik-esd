@@ -1,0 +1,54 @@
+<article id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact-form">
+      <p class="contact-form-text col-xs-12 col-sm-8">
+        ¿Necesitas nuestros servicios para tu proyecto? ¿Quiéres un presupuesto? ¿Estás pensando en una colaboración profesional? Ponte en contacto con nosotros, estaremos encantados de saber de ti.
+      </p>
+    </div>
+
+    <form id="contact">
+      <label>
+          <input id="nombre" type="text" placeholder="Nombre*" required minlength="3" autocomplete="off">
+          <span>Nombre</span>
+      </label>    
+      <label>
+          <input id="empresa" type="text" placeholder="Empresa" autocomplete="off">
+          <span>Empresa</span>
+      </label>
+      <label>
+          <input id="nombre" type="tel" placeholder="Teléfono" autocomplete="off">
+          <span>Teléfono</span>
+      </label>    
+      <label>
+          <input id="empresa" type="email" placeholder="Email*" required autocomplete="off">
+          <span>Email</span>
+      </label>
+      <div class="select-wrapper">
+        <select id="tipo" name="select" required>
+            <option value="" hidden>Tipo de proyecto*</option>
+            <option value="web-design">Diseño web</option> 
+            <option value="app-design">Diseño app</option>
+            <option value="development">Servicios de desarrollo</option>
+        </select>
+        <div class="visible-web-design">
+          <p>
+            Por favor, cuéntanos un poco sobre la idea de proyecto web que quieres hacer, si se trata de un ecommerce, de un portal de noticias, la web de tu empresa...
+          </p>
+          <textarea></textarea>
+        </div> 
+        <div class="visible-app-design">
+            <p>
+                Por favor, cuéntanos un poco sobre la idea de aplicación que tienes en mente...
+              </p>
+              <textarea></textarea>        
+            </div>
+        <div class="visible-development">
+            <p>
+              Por favor, cuéntanos en qué podemos ayudarte con tu proyecto...
+            </p>
+            <textarea></textarea>        
+          </div>   
+      </div>
+      <input type="submit" value="Enviar" id="enviar">
+    </form>
+</article>

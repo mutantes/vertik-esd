@@ -1,0 +1,13 @@
+.about-item {
+  margin-bottom: 24px;
+  @include breakpoint(bp-s) {
+    padding-right: 80px;
+  }
+  .about-item-title {
+    margin-bottom: 12px;
+  }
+  .about-item-bio {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+}

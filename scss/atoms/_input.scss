@@ -1,0 +1,117 @@
+
+label {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+
+  input {
+    background: none;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $color-gray;
+    outline: none;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    @include breakpoint(bp-s) {
+      margin-bottom: 20px;
+    }
+    &::placeholder {
+      transition: all 0.2s ease-in-out;
+      color: #999;
+      font: 18px 'Lato', Arial, sans-serif;
+    }
+    &:focus, &.populated {
+      
+      &::placeholder {
+        color: transparent;
+      }
+      
+      & + span {
+        position: absolute;
+        opacity: 1;
+        top: 10px;
+      }
+    }
+  }
+  span {
+    font: 12px 'Lato', Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  column-span: all;
+  display: block;
+  width: 100%;
+  margin-top: 38px;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #4f4f4f transparent transparent transparent;
+    display: inline-block;
+    top: 12px;
+    right: 6px;
+    position: absolute;
+    transition: transform 100ms ease-in-out;
+  }
+}
+
+select {
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid $color-gray;
+  border-radius: 0 !important;
+  appearance: none;
+  font-size: 18px;
+  padding-bottom: 8px;
+  color: #999;
+
+  &:valid {
+    color: inherit;
+  }
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  background: #fcfcf7;
+  border: 1px solid $color-gray;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  height: 120px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  column-span: all;
+  display: block;
+  margin-top: 38px;
+  background: $color-black;
+  color: $color-bg;
+  padding: 14px;
+  text-transform: uppercase;
+  font-size: 14px;  
+  transition: background 100ms ease-in-out;
+  border: 0;
+  outline: none;
+  &:hover {
+    background: $color-yellow;
+    color: $color-black;
+  }
+}

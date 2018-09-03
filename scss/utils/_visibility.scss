@@ -1,0 +1,29 @@
+.hide-l {
+  @include breakpoint(bp-l) {
+    display: none;
+  }
+}
+.hide-m {
+  @include breakpoint(bp-m) {
+    display: none;
+  }
+}
+.hide-m-l {
+  @include breakpoint(bp-m-l) {
+    display: none;
+  }
+}
+.hide-s {
+  @media (max-width: 767px) {
+    display:none;
+  }
+}
+.hide-up-s {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.hide {
+  display: none;
+}

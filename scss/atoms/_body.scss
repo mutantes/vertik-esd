@@ -1,0 +1,20 @@
+html {
+    background: $color-black;
+    min-height: 100vh;
+}
+
+body {
+    background: $color-bg;
+    color: $color-black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}

@@ -1,4 +1,28 @@
 
 // Utils
 @import 'utils/normalize';
+@import 'utils/variables';
 @import 'utils/grid';
+@import 'utils/fonts';
+@import 'utils/visibility';
+
+// atoms
+@import 'atoms/body';
+@import 'atoms/input';
+@import 'atoms/section-title';
+@import 'atoms/project-card';
+@import 'atoms/about-item';
+
+// elements
+@import 'elements/header-menu';
+@import 'elements/mob-menu';
+@import 'elements/main-menu';
+@import 'elements/lang-menu';
+@import 'elements/float-logo';
+@import 'elements/main-content';
+@import 'elements/footer';
+
+// pages
+@import 'pages/page-home';
+@import 'pages/page-proyectos';
+@import 'pages/page-contact-form';

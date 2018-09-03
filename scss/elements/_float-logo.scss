@@ -1,0 +1,32 @@
+.float-logo {
+  height: 45px;
+  width: 65px;
+  background-color: $color-yellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 200ms ease;
+  padding-left: 65px;
+  text-transform: uppercase;
+  line-height: 45px;
+  font-size: 12px;
+  position: relative;
+  margin-right: 40px;
+
+  &:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 65px;
+    height: 100%;
+    background: url(../img/logo.svg) no-repeat;
+    background-position: 12px center;
+    transition: transform 400ms ease;
+  }
+
+  &:hover {
+    min-width: 165px;
+    &:before {
+      transform: rotate(-180deg)
+    }
+  }
+}

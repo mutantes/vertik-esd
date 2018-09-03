@@ -1,0 +1,12 @@
+.section-title {
+  margin-bottom: 40px;
+
+  &:after {
+    content: '';
+    height: 4px;
+    width: 20px;
+    background: $color-yellow;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
